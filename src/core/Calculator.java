@@ -48,6 +48,12 @@ public class Calculator {
         this.memory[index] = 0;
     }
     
+    public void clearMemory() {
+        for (int i = 0; i < this.memory.length; i++) {
+            this.deleteValue(i);
+        }
+    }
+    
     public int getMemorySize() {
         return this.memory.length;
     }
